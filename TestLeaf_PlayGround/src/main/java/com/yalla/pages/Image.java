@@ -1,6 +1,6 @@
 package com.yalla.pages;
 
-public class Image {
+public class Image extends Annotations{
 	public Image() {
 
 	}

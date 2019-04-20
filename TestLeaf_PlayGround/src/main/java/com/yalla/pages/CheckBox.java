@@ -1,6 +1,6 @@
 package com.yalla.pages;
 
-public class CheckBox {
+public class CheckBox extends Annotations{
 	public CheckBox() {
 
 	}

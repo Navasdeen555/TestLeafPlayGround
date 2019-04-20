@@ -1,6 +1,6 @@
 package com.yalla.pages;
 
-public class FileDownload {
+public class FileDownload extends Annotations{
 	public FileDownload() {
 
 	}

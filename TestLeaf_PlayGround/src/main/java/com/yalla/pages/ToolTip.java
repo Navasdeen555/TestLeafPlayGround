@@ -1,6 +1,6 @@
 package com.yalla.pages;
 
-public class ToolTip {
+public class ToolTip extends Annotations{
 	public ToolTip() {
 
 	}

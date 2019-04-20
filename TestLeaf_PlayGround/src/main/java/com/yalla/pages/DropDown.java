@@ -1,6 +1,6 @@
 package com.yalla.pages;
 
-public class DropDown {
+public class DropDown extends Annotations{
 	public DropDown() {
 
 	}

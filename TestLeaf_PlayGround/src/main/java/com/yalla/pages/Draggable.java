@@ -1,6 +1,6 @@
 package com.yalla.pages;
 
-public class Draggable {
+public class Draggable extends Annotations{
 	public Draggable() {
 
 	}

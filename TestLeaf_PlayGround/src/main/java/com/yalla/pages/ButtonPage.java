@@ -1,6 +1,6 @@
 package com.yalla.pages;
 
-public class ButtonPage {
+public class ButtonPage extends Annotations {
 	public ButtonPage() {
 
 	}

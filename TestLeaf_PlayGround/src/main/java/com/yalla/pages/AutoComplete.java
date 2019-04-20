@@ -1,6 +1,6 @@
 package com.yalla.pages;
 
-public class AutoComplete {
+public class AutoComplete extends Annotations{
 	public AutoComplete() {
 
 	}

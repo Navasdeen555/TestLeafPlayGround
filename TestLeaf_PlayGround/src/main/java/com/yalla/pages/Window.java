@@ -1,6 +1,6 @@
 package com.yalla.pages;
 
-public class Window {
+public class Window extends Annotations{
 	public Window() {
 
 	}

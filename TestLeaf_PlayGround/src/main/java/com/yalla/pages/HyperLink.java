@@ -1,6 +1,6 @@
 package com.yalla.pages;
 
-public class HyperLink {
+public class HyperLink extends Annotations{
 	public HyperLink() {
 
 	}

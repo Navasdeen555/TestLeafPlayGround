@@ -1,6 +1,6 @@
 package com.yalla.pages;
 
-public class Table {
+public class Table extends Annotations{
 	public Table() {
 
 	}

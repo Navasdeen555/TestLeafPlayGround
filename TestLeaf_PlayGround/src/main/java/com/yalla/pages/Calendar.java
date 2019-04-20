@@ -1,6 +1,6 @@
 package com.yalla.pages;
 
-public class Calendar {
+public class Calendar extends Annotations{
 	public Calendar() {
 
 	}

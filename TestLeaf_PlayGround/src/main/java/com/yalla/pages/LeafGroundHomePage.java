@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 
-public class LeafGroundHomePage {
+public class LeafGroundHomePage extends Annotations{
 	public LeafGroundHomePage () {
 
 	}
@@ -34,7 +34,7 @@ public class LeafGroundHomePage {
 
 
 	public EditPage clickEdit() {
-		eleEdit.click();
+		click(eleEdit);
 		return new EditPage();
 	}
 
