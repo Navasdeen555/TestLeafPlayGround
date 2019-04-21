@@ -7,6 +7,14 @@ import org.openqa.selenium.WebElement;
 
 public interface Element {
 	
+	/**
+	 * This method will get the control to the previous page.
+	 * @author Navas - TechM
+	 * @throws StaleElementReferenceException
+	 */
+	public void goToPrevPage();
+	
+	public void goToNextPage();
 	
 	/**
 	 * This method will click the element and take snap
@@ -17,6 +25,7 @@ public interface Element {
 	 */
 	public void click(WebElement ele);
 	
+
 	
 	/**
 	 * This method will enter the value in the given text field 
@@ -46,6 +55,17 @@ public interface Element {
 	 * @throws ElementNotInteractable,IllegalArgumentException(throws if keysToSend is null)		 
 	 */
 	public void clearAndType(WebElement ele,String data);
+	
+	/**
+	 * This method will just type the value in the given text field 
+	 * @param ele   - The Webelement (text field) in which the data to be entered
+	 * @param data  - The data to be sent to the webelement
+	 * @see locateElement method in Browser Class
+	 * @author Sarath - TestLeaf
+	 * @throws ElementNotInteractable,IllegalArgumentException(throws if keysToSend is null)		 
+	 */
+	public void justType(WebElement ele,String data);
+	
 	
 	/**
 	 * This method will get the visible text of the element
@@ -184,5 +204,8 @@ public interface Element {
 	 * @return True if the element is currently selected or checked, false otherwise.
 	 */
 	public boolean verifySelected(WebElement ele);
+
+
+	
 	
 }

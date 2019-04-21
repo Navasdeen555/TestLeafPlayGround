@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="11338" started-at="2019-04-20T17:45:26Z" finished-at="2019-04-20T17:45:37Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="11338" started-at="2019-04-20T17:45:26Z" finished-at="2019-04-20T17:45:37Z">
+      <class name="com.yalla.testcases.TC001_EditTest">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.yalla.testcases.TC001_EditTest@1a5fe33]" name="startReport" is-config="true" duration-ms="425" started-at="2019-04-20T17:45:26Z" finished-at="2019-04-20T17:45:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="report()[pri:0, instance:com.yalla.testcases.TC001_EditTest@1a5fe33]" name="report" is-config="true" duration-ms="15" started-at="2019-04-20T17:45:26Z" finished-at="2019-04-20T17:45:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method status="PASS" signature="setData()[pri:0, instance:com.yalla.testcases.TC001_EditTest@1a5fe33]" name="setData" is-config="true" duration-ms="0" started-at="2019-04-20T17:45:26Z" finished-at="2019-04-20T17:45:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.yalla.testcases.TC001_EditTest@1a5fe33]" name="beforeMethod" is-config="true" duration-ms="8286" started-at="2019-04-20T17:45:27Z" finished-at="2019-04-20T17:45:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="testEditFunction(java.lang.String)[pri:0, instance:com.yalla.testcases.TC001_EditTest@1a5fe33]" name="testEditFunction" duration-ms="2046" started-at="2019-04-20T17:45:35Z" data-provider="fetchData" finished-at="2019-04-20T17:45:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[navasdeen555@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditFunction -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.yalla.testcases.TC001_EditTest@1a5fe33]" name="afterMethod" is-config="true" duration-ms="422" started-at="2019-04-20T17:45:37Z" finished-at="2019-04-20T17:45:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="stopReport()[pri:0, instance:com.yalla.testcases.TC001_EditTest@1a5fe33]" name="stopReport" is-config="true" duration-ms="391" started-at="2019-04-20T17:45:38Z" finished-at="2019-04-20T17:45:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopReport -->
+      </class> <!-- com.yalla.testcases.TC001_EditTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

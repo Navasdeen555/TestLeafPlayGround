@@ -96,6 +96,19 @@ public class SeleniumBase extends Reporter implements Browser, Element{
 		}
 
 	}
+	@Override
+	public void justType(WebElement ele, String data) {
+		try {
+			ele.sendKeys(data);
+			reportStep("The Data :"+data+" entered Successfully", "pass");
+			//System.out.println("The Data :"+data+" entered Successfully");
+		} catch (ElementNotInteractableException e) {
+			reportStep("The Element "+ele+" is not Interactable", "fail");
+			//System.err.println("The Element "+ele+" is not Interactable");
+			throw new RuntimeException();
+		}
+
+	}
 
 	@Override
 	public String getElementText(WebElement ele) {
@@ -483,6 +496,18 @@ public class SeleniumBase extends Reporter implements Browser, Element{
 	public void quit() {
 		driver.quit();
 
+	}
+
+
+
+	@Override
+	public void goToPrevPage() {
+		driver.navigate().back();		
+	}
+	
+	@Override
+	public void goToNextPage() {
+		driver.navigate().forward();		
 	}
 
 }

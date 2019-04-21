@@ -3,14 +3,17 @@ package com.yalla.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+import com.yalla.testng.api.base.Annotations;
 
 
 public class LeafGroundHomePage extends Annotations{
 	public LeafGroundHomePage () {
+		PageFactory.initElements(driver, this);
 
 	}
 
-	@FindBy (how=How.LINK_TEXT, using="Edit") WebElement eleEdit;
+	@FindBy (how=How.XPATH, using="//a[@href='pages/Edit.html']") WebElement eleEdit;
 	@FindBy (how=How.LINK_TEXT, using="Button") WebElement eleButton;
 	@FindBy (how=How.LINK_TEXT, using="HyperLink") WebElement eleHyperLink;
 	@FindBy (how=How.LINK_TEXT, using="Image") WebElement eleImage;
