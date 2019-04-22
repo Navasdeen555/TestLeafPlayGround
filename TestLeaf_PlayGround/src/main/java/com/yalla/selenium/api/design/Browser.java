@@ -3,6 +3,7 @@ package com.yalla.selenium.api.design;
 import java.net.MalformedURLException;
 import java.util.List;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 
 import freemarker.core.ReturnInstruction.Return;
@@ -175,7 +176,14 @@ public interface Browser {
 	 */
 	public void quit();
 	
+	/**
+	 * This method will get the control to the previous page.
+	 * @author Navas - TechM
+	 * @throws StaleElementReferenceException
+	 */
+	public void goToPrevPage();
 	
+	public void goToNextPage();
 	
 	
 

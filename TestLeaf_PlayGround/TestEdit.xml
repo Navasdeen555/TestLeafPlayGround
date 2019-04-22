@@ -4,6 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.yalla.testcases.TC001_EditTest"/>
+      <class name="com.yalla.testcases.TC002_ButtonTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

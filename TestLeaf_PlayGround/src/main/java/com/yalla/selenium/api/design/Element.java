@@ -7,14 +7,6 @@ import org.openqa.selenium.WebElement;
 
 public interface Element {
 	
-	/**
-	 * This method will get the control to the previous page.
-	 * @author Navas - TechM
-	 * @throws StaleElementReferenceException
-	 */
-	public void goToPrevPage();
-	
-	public void goToNextPage();
 	
 	/**
 	 * This method will click the element and take snap
@@ -204,6 +196,9 @@ public interface Element {
 	 * @return True if the element is currently selected or checked, false otherwise.
 	 */
 	public boolean verifySelected(WebElement ele);
+	
+	
+	
 
 
 	

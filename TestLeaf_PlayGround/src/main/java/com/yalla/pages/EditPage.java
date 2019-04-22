@@ -13,6 +13,7 @@ public class EditPage extends Annotations{
 	}
 	@FindBy(how=How.ID, using="email") WebElement editMailId;
 	@FindBy(how=How.XPATH, using="//input[@value=\"Append \"]") WebElement appendText;
+	@FindBy(how=How.NAME, using="username") WebElement getTheText;
 	@FindBy(how=How.XPATH, using="//input[contains(@value,\"Clear\")]") WebElement clearText;
 	@FindBy(how=How.XPATH, using="//label[contains(text(),\"Confirm that edit field is disabled\")]//following::input") WebElement disabledTextBox;
 
@@ -23,20 +24,30 @@ public class EditPage extends Annotations{
 
 	}
 
-	public EditPage AppendText(String data) {
+	public EditPage AppendText(String data) throws InterruptedException {
+		Thread.sleep(1000);
 		justType(appendText, data);
 		return this;
 	}
-	public EditPage clearTheText() {
+	public EditPage getTheTextEntered() throws InterruptedException {
+		Thread.sleep(1000);
+		String typedText = getTypedText(getTheText);
+		System.out.println(typedText);
+		return this;
+	}
+	public EditPage clearTheText() throws InterruptedException {
+		Thread.sleep(1000);
 		clear(clearText);
 		return this;
 	}
-	public EditPage confirmFieldIsDisabled() {
+	public EditPage confirmFieldIsDisabled() throws InterruptedException {
+		Thread.sleep(1000);
 		verifyEnabled(disabledTextBox);
 		return this;
 
 	}
-	public LeafGroundHomePage goBackToHomePage() {
+	public LeafGroundHomePage goBackToHomePage() throws InterruptedException {
+		Thread.sleep(1000);
 		goToPrevPage();
 		return new LeafGroundHomePage();
 	}

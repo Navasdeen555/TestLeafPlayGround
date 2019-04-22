@@ -8,11 +8,13 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.NoSuchWindowException;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
@@ -50,7 +52,31 @@ public class SeleniumBase extends Reporter implements Browser, Element{
 
 	}
 
+//	Included By Navas
+	public Point findPosition(WebElement ele) {
+		Point location = ele.getLocation();
+		return location;
+	}
 
+//Included By Navas
+	public String findColor(WebElement ele) {
+		String color = ele.getCssValue("color");
+		String[] hexValue = color.replace("rgba(","").replace(")", "").split(",");       
+		hexValue[0] = hexValue[0].trim();
+		int hexValue1 = Integer.parseInt(hexValue[0]);                   
+		hexValue[1] = hexValue[1].trim();
+		int hexValue2 = Integer.parseInt(hexValue[1]);                   
+		hexValue[2] = hexValue[2].trim();
+		int hexValue3 = Integer.parseInt(hexValue[2]);
+		String actualColor = String.format("#%02x%02x%02x", hexValue1,hexValue2,hexValue3);
+		return actualColor;
+	}
+
+//Included By Navas
+	public Dimension findSize(WebElement ele) {
+		Dimension size = ele.getSize();
+		return size;
+	}
 
 	public void clickWithNoSnap(WebElement ele) {
 		try {
@@ -504,7 +530,7 @@ public class SeleniumBase extends Reporter implements Browser, Element{
 	public void goToPrevPage() {
 		driver.navigate().back();		
 	}
-	
+
 	@Override
 	public void goToNextPage() {
 		driver.navigate().forward();		

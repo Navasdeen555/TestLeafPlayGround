@@ -19,8 +19,9 @@ public class TC001_EditTest extends Annotations{
 
 	@Test(dataProvider="fetchData") 
 
-	public void testEditFunction(String eMail) {
+	public void testEditFunction(String eMail) throws InterruptedException {
 		new LeafGroundHomePage().clickEdit().EnterMailID(eMail).AppendText(eMail).
+		getTheTextEntered().
 		clearTheText().confirmFieldIsDisabled().goBackToHomePage();
 	}
 
